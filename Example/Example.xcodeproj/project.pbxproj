@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 60;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -16,6 +16,7 @@
 		84CF0D7A2BBADADB00A46C2F /* ExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84CF0D792BBADADB00A46C2F /* ExampleTests.swift */; };
 		84CF0D842BBADADB00A46C2F /* ExampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84CF0D832BBADADB00A46C2F /* ExampleUITests.swift */; };
 		84CF0D862BBADADB00A46C2F /* ExampleUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84CF0D852BBADADB00A46C2F /* ExampleUITestsLaunchTests.swift */; };
+		84DFE8842BCC12BC00C6DA8C /* ToastedMessages in Frameworks */ = {isa = PBXBuildFile; productRef = 84DFE8832BCC12BC00C6DA8C /* ToastedMessages */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84DFE8842BCC12BC00C6DA8C /* ToastedMessages in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -145,6 +147,9 @@
 			dependencies = (
 			);
 			name = Example;
+			packageProductDependencies = (
+				84DFE8832BCC12BC00C6DA8C /* ToastedMessages */,
+			);
 			productName = Example;
 			productReference = 84CF0D5F2BBADADA00A46C2F /* Example.app */;
 			productType = "com.apple.product-type.application";
@@ -217,6 +222,9 @@
 				Base,
 			);
 			mainGroup = 84CF0D562BBADADA00A46C2F;
+			packageReferences = (
+				84DFE8822BCC12BC00C6DA8C /* XCLocalSwiftPackageReference "../ToastedMessages" */,
+			);
 			productRefGroup = 84CF0D602BBADADA00A46C2F /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -370,7 +378,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -427,7 +435,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -444,6 +452,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = YK2X3DL675;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Example/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -451,6 +460,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -471,6 +481,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = YK2X3DL675;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Example/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -478,6 +489,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -603,6 +615,20 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCLocalSwiftPackageReference section */
+		84DFE8822BCC12BC00C6DA8C /* XCLocalSwiftPackageReference "../ToastedMessages" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = ../ToastedMessages;
+		};
+/* End XCLocalSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		84DFE8832BCC12BC00C6DA8C /* ToastedMessages */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = ToastedMessages;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 84CF0D572BBADADA00A46C2F /* Project object */;
 }
