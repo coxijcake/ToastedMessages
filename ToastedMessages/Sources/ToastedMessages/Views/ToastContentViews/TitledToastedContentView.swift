@@ -72,6 +72,11 @@ private extension TitledToastedContentView {
 	}
 }
 
+//MARK: - ToastContentView
+extension TitledToastedContentView: ToastContentView {
+	
+}
+
 // MARK: - Base Configuration
 private extension TitledToastedContentView {
     func baseConfigure() {

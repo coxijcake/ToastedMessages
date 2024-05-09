@@ -1,11 +1,15 @@
 //
-//  ToastLayoutConfiguration.swift
+//  ToastedMessageViewConfiguration.swift
 //
 //
 //  Created by Nikita Begletskiy on 05/05/2024.
 //
 
 import UIKit
+
+public struct ToastedMessageViewConfiguration {
+	public let layout: ToastLayoutConfiguration
+}
 
 public struct ToastLayoutConfiguration {
 	let constraints: Constraints
